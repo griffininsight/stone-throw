@@ -7,10 +7,37 @@
 	
 }
 
+@font-face {
+font-family: 'steelfish';
+font-style: normal;
+font-weight: normal;
+src: local('Steelfish Regular'), url('fonts/steelfis.woff') format('woff');
+}
+.steelfish {
+font-family: 'steelfish';
+}
+
 .custom-logo {
 	margin-top: 40px;
 	border: 2px solid #ffffff;
+	float: left;
 }
+.site-title {
+	overflow: visible !important;
+	position: relative !important;
+	clip: auto !important;
+	font-family: 'steelfish';
+	font-size: 2em;
+	border: 0px solid #ff0000 !important;
+	width: 250px !important;
+	height: 50px !important;
+	margin-top: 80px;
+	margin-left: 120px;
+}
+.site-title:hover {
+	font-weight: bold;
+}
+
 
 .homepage-icons {
 	color: var(--green-3) !important;
