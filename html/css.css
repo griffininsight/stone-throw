@@ -1,0 +1,24 @@
+:root {
+	/* colors */
+	--green-1: #BACF9D;
+	--green-2: #93B278;
+	--green-3: #789C4A;
+	--green-4: #6F8356;
+	
+}
+
+.custom-logo {
+	margin-top: 40px;
+	border: 2px solid #ffffff;
+}
+
+.homepage-icons {
+	color: var(--green-3) !important;
+}
+
+i {
+	background-color:transparent;
+}
+
+.flex { display: flex; }
+.flex-1 { flex: 1; }
