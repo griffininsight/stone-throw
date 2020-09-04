@@ -7,6 +7,21 @@
 	
 }
 
+.white ( color: #ffffff !important; )
+
+hr { 
+	  color: var(--green-4) !important;
+	 border-bottom: 0px solid #000000 !important;
+	 margin: 0 !important;
+	 padding: 0 !important;
+}
+
+
+@keyframes titletext {
+  from {color: #ffffff;}
+  to {color: #000000;}
+}
+  
 @font-face {
 font-family: 'steelfish';
 font-style: normal;
@@ -16,10 +31,17 @@ src: local('Steelfish Regular'), url('fonts/steelfis.woff') format('woff');
 .steelfish {
 font-family: 'steelfish';
 }
+.sf-bump {
+	font-size: 2em !important;
+}
+
+.link_ { text-decoration: none !important; color: #000000; }
+.link_:hover { color: var(--green-4); }
+
 
 .custom-logo {
 	margin-top: 40px;
-	border: 2px solid #ffffff;
+	border: 3px solid #ffffff;
 	float: left;
 }
 .site-title {
@@ -35,12 +57,24 @@ font-family: 'steelfish';
 	margin-left: 120px;
 }
 .site-title:hover {
-	font-weight: bold;
+	animation-name: titletext;
+	animation-duration: 2s;
 }
 
+.entry-title {
+	display: none;
+}
 
 .homepage-icons {
-	color: var(--green-3) !important;
+	/*color: var(--green-3) !important;*/
+}
+
+.homepage-icons a {
+	text-decoration: none;
+}
+
+.front-page-3 {
+	background-color: var(--green-3) !important;
 }
 
 i {
@@ -49,3 +83,39 @@ i {
 
 .flex { display: flex; }
 .flex-1 { flex: 1; }
+
+.card {
+	border: 1px solid var(--green-4);
+	background-color: #ffffff;
+	opacity: .6;
+	margin: 50px;
+	padding: 50px;
+	border-radius: 25px;
+}
+
+/*-----*/
+
+@media screen and (max-width: 2200px) /* all XL screens */ { }
+@media screen and (min-width: 2000px) /* all XL screens */ { }
+@media screen and (max-width: 1630px) /* XL screens */ { }
+@media screen and (max-width: 1430px) /* L screens */ { }
+
+@media screen and (max-width: 1180px) /* intial break */
+{
+.flex { display: block; }
+.flex-1 {
+	/*flex: none;*/
+	width: 100%;
+}
+.card {
+	background-color: transparent;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 05px;
+}
+}
+
+@media screen and (max-width: 840px) /* intial break */
+{ 
+
+}
