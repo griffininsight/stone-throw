@@ -31,14 +31,24 @@ src: local('Steelfish Regular'), url('fonts/steelfis.woff') format('woff');
 .steelfish {
 font-family: 'steelfish';
 }
+.home-cta {
+	font-size: 4.6em;
+}
 .sf-bump {
 	font-size: 2em !important;
 }
 
-.link_ { text-decoration: none !important; color: #000000; }
-.link_:hover { color: var(--green-4); }
+.link_ { text-decoration: none !important; color: var(--green-4); }
+.link_:hover { color: var(--green-1); }
 
+.site-header {
+	background-color: #ffffff;
+}
+#menu-primary { font-family: 'steelfish'; font-size: 1.2em; }
+#menu-primary li a { color: var(--green-4) !important; }
+#menu-primary li a:hover { color: var(--green-1) !important; }
 
+/*
 .custom-logo {
 	margin-top: 40px;
 	border: 3px solid #ffffff;
@@ -49,18 +59,24 @@ font-family: 'steelfish';
 	position: relative !important;
 	clip: auto !important;
 	font-family: 'steelfish';
-	font-size: 2em;
+	text-align: center;
 	border: 0px solid #ff0000 !important;
 	width: 250px !important;
 	height: 50px !important;
-	margin-top: 80px;
-	margin-left: 120px;
+	margin-top: 55px;
+	margin-left: 85px;
+	font-size: 2.3em;
 }
 .site-title:hover {
 	animation-name: titletext;
 	animation-duration: 2s;
 }
-
+.title-span-t { font-size: 2.3em; }
+.title-span-b {
+	font-size: 2.1em !important;
+	font-weight: 50 !important;
+}
+*/
 .entry-title {
 	display: none;
 }
@@ -73,6 +89,9 @@ font-family: 'steelfish';
 	text-decoration: none;
 }
 
+.front-page-2 {
+	padding: 60px 0 30px 0;
+}
 .front-page-3 {
 	background-color: var(--green-3) !important;
 }
