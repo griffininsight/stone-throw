@@ -10,7 +10,7 @@
 .white ( color: #ffffff !important; )
 
 hr { 
-	  color: var(--green-4) !important;
+	 color: var(--green-4) !important;
 	 border-bottom: 0px solid #000000 !important;
 	 margin: 0 !important;
 	 padding: 0 !important;
@@ -40,6 +40,9 @@ font-family: 'steelfish';
 
 .link_ { text-decoration: none !important; color: var(--green-4); }
 .link_:hover { color: var(--green-1); }
+.footer-text { font-style: normal !important; }
+.footer-text a { text-decoration: none !important; }
+.footer-text a:hover { text-decoration: underline !important; }
 
 .site-header {
 	background-color: #ffffff;
@@ -47,6 +50,14 @@ font-family: 'steelfish';
 #menu-primary { font-family: 'steelfish'; font-size: 1.2em; }
 #menu-primary li a { color: var(--green-4) !important; }
 #menu-primary li a:hover { color: var(--green-1) !important; }
+
+.menu-toggle {
+	color: #000000 !important;
+}
+
+.activated {
+	background: var(--green-1);
+}
 
 /*
 .custom-logo {
@@ -111,6 +122,49 @@ i {
 	padding: 50px;
 	border-radius: 25px;
 }
+
+.overlay { 
+	position: relative;
+	text-align: center;
+	color: white;
+	margin:10px;
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.overlay h4, p { 
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.overlay a { 
+	color: white;
+}
+
+.overlay-text {
+position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*---FOOTER---*/
+.footer-widgets a {
+	text-decoration: none;
+}
+
+.footer-widgets a:hover {
+	text-decoration: underline;
+}
+
+.footer-widgets-2 h3 {
+	font-size: 2em !important;
+	font-family: 'steelfish';
+}
+
+
+
 
 /*-----*/
 
